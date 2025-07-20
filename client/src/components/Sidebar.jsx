@@ -6,7 +6,7 @@ import { ChatContext } from '../../context/ChatContext'
 import { AuthContext } from '../../context/AuthContext'
 import { toast } from 'react-toastify'
 
-const Sidebar123 = () => {
+const Sidebar = () => {
   const { getUsers, users, selectedUser, setSelectedUser, unseenMessages, setUnseenMessages } = useContext(ChatContext)
   const { logout, onlineUsers } = useContext(AuthContext)
 
@@ -86,4 +86,4 @@ const Sidebar123 = () => {
   )
 }
 
-export default Sidebar123
+export default Sidebar
