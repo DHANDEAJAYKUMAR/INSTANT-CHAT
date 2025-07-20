@@ -1,3 +1,5 @@
+
+
 import React, { useContext, useEffect, useState } from 'react'
 import assets from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
@@ -5,7 +7,7 @@ import { ChatContext } from '../../context/ChatContext'
 import { AuthContext } from '../../context/AuthContext'
 import { toast } from 'react-toastify'
 
-const Sidebar = () => {
+const ChatSidebar  = () => {
   const { getUsers, users, selectedUser, setSelectedUser, unseenMessages, setUnseenMessages } = useContext(ChatContext)
   const { logout, onlineUsers } = useContext(AuthContext)
 
@@ -85,4 +87,5 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default ChatSidebar 
+

@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/ChatSidebar ';
 import ChatContainer from '../components/ChatContainer';
 import RightSidebar from '../components/RightSidebar';
 import { ChatContext } from '../../context/ChatContext';
+import ChatSidebar from '../components/ChatSidebar ';
 
 const HomePage = () => {
   const { selectedUser } = useContext(ChatContext);
@@ -16,7 +17,7 @@ const HomePage = () => {
             : 'md:grid-cols-2'
         }`}
       >
-        <Sidebar />
+        <ChatSidebar />
         <ChatContainer />
         {selectedUser && <RightSidebar />}
       </div>
